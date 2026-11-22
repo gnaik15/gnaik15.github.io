@@ -134,3 +134,41 @@ nav a:hover {
 .hero-buttons {
     margin-top: 10px;
 }
+
+#experience {
+    background-color: #f7f7f7;
+}
+
+.experience-card {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+}
+
+.experience-card h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.date {
+    color: #666666;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.experience-card ul {
+    margin-top: 15px;
+}
+
+.experience-card li {
+    margin-bottom: 8px;
+}
