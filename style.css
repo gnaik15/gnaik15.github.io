@@ -418,3 +418,92 @@ section p {
         padding: 22px;
     }
 }
+
+/* =========================
+   HERO TWO-COLUMN LAYOUT
+========================= */
+
+.hero-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.7fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 760px;
+}
+
+.hero-photo {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.hero-photo::before {
+    content: "";
+
+    position: absolute;
+
+    width: 90%;
+
+    height: 90%;
+
+    background: rgba(96, 165, 250, 0.10);
+
+    border-radius: 28px;
+
+    transform: rotate(4deg);
+}
+
+.hero-photo img {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 330px;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    object-position: center top;
+
+    border-radius: 22px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.35);
+
+    z-index: 1;
+}
+
+
+/* HERO MOBILE */
+
+@media (max-width: 800px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .hero-photo {
+        justify-content: flex-start;
+    }
+
+    .hero-photo img {
+        max-width: 260px;
+    }
+}
